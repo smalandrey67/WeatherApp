@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link  rel="stylesheet" href="css/style.min.css">
+</head>
+<!-- после окончания верстки написать gulp build что бы все перенеслось! В концк проекта -->
+<body>
+    <header>
+        <div class="container">
+            <div class="main">
+                <h1 class="main__text">the weather in your country</h1>
+                <img class="main__image"src="./images/logo-icon.png" alt="logo">
+            </div>
+        </div>
+    </header>
+    <!-- main-part -->
+    <section>
+        <div class="container">
+            <div class="find">
+                <div class="find__weather">
+                    <input type="text" class="find__input" name="find-country" placeholder="your city or country">
+                    <button type="submit" class="find__button">Search</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- weather-card -->
+    <section>
+        <div class="container">
+            <div class="weather">
+                <!-- first-day -->
+                <div class="weather__card" data-weather="firstDay"></div>
+                <!-- second-day -->
+                <div class="weather__card" data-weather="secondDay"></div>
+            </div>
+        </div>
+    </section>
+    <script src="js/main.min.js"></script>
+</body>
+</html>
+    
